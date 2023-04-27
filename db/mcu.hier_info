@@ -1,0 +1,168 @@
+|mcu
+CLK => ~NO_FANOUT~
+HEX0[0] <= seven_segment:s7.out
+HEX0[1] <= seven_segment:s7.out
+HEX0[2] <= seven_segment:s7.out
+HEX0[3] <= seven_segment:s7.out
+HEX0[4] <= seven_segment:s7.out
+HEX0[5] <= seven_segment:s7.out
+HEX0[6] <= seven_segment:s7.out
+HEX1[0] <= <GND>
+HEX1[1] <= <GND>
+HEX1[2] <= <GND>
+HEX1[3] <= <GND>
+HEX1[4] <= <GND>
+HEX1[5] <= <GND>
+HEX1[6] <= <GND>
+HEX2[0] <= <GND>
+HEX2[1] <= <GND>
+HEX2[2] <= <GND>
+HEX2[3] <= <GND>
+HEX2[4] <= <GND>
+HEX2[5] <= <GND>
+HEX2[6] <= <GND>
+HEX3[0] <= <GND>
+HEX3[1] <= <GND>
+HEX3[2] <= <GND>
+HEX3[3] <= <GND>
+HEX3[4] <= <GND>
+HEX3[5] <= <GND>
+HEX3[6] <= <GND>
+LED[0] <= <GND>
+LED[1] <= <GND>
+LED[2] <= <GND>
+LED[3] <= <GND>
+LED[4] <= <GND>
+LED[5] <= <GND>
+LED[6] <= <GND>
+LED[7] <= <GND>
+LED[8] <= <GND>
+LED[9] <= <GND>
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+SW[3] => SW[3].IN1
+SW[4] => SW[4].IN1
+SW[5] => SW[5].IN1
+SW[6] => SW[6].IN1
+SW[7] => SW[7].IN1
+SW[8] => SW[8].IN1
+SW[9] => ~NO_FANOUT~
+BTN[0] => ~NO_FANOUT~
+BTN[1] => ~NO_FANOUT~
+BTN[2] => ~NO_FANOUT~
+
+
+|mcu|_4bits_add_sub:as
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+B[0] => comb.IN0
+B[1] => comb.IN0
+B[2] => comb.IN0
+B[3] => comb.IN0
+M => M.IN1
+C <= full_adder:fa4.Co
+S[0] <= full_adder:fa1.S
+S[1] <= full_adder:fa2.S
+S[2] <= full_adder:fa3.S
+S[3] <= full_adder:fa4.S
+V <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mcu|_4bits_add_sub:as|full_adder:fa1
+A => W1.IN0
+A => W3.IN0
+B => W1.IN1
+B => W3.IN1
+Ci => comb.IN1
+Ci => W2.IN1
+Co <= comb.DB_MAX_OUTPUT_PORT_TYPE
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mcu|_4bits_add_sub:as|full_adder:fa2
+A => W1.IN0
+A => W3.IN0
+B => W1.IN1
+B => W3.IN1
+Ci => comb.IN1
+Ci => W2.IN1
+Co <= comb.DB_MAX_OUTPUT_PORT_TYPE
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mcu|_4bits_add_sub:as|full_adder:fa3
+A => W1.IN0
+A => W3.IN0
+B => W1.IN1
+B => W3.IN1
+Ci => comb.IN1
+Ci => W2.IN1
+Co <= comb.DB_MAX_OUTPUT_PORT_TYPE
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mcu|_4bits_add_sub:as|full_adder:fa4
+A => W1.IN0
+A => W3.IN0
+B => W1.IN1
+B => W3.IN1
+Ci => comb.IN1
+Ci => W2.IN1
+Co <= comb.DB_MAX_OUTPUT_PORT_TYPE
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mcu|seven_segment:s7
+in[0] => out.IN1
+in[0] => out.IN1
+in[0] => out.IN1
+in[0] => out.IN1
+in[0] => out.IN1
+in[0] => out.IN0
+in[0] => out.IN1
+in[0] => out.IN1
+in[0] => out.IN1
+in[0] => out.IN1
+in[0] => out.IN1
+in[0] => out.IN1
+in[0] => out.IN1
+in[0] => out.IN1
+in[0] => out.IN1
+in[0] => out.IN1
+in[0] => out.IN1
+in[1] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN1
+in[2] => out.IN1
+in[2] => out.IN0
+in[2] => out.IN0
+in[2] => out.IN0
+in[2] => out.IN1
+in[2] => out.IN0
+in[3] => out.IN1
+in[3] => out.IN1
+in[3] => out.IN1
+in[3] => out.IN1
+in[3] => out.IN1
+in[3] => out.IN1
+in[3] => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
