@@ -1,4 +1,4 @@
-vsim -voptargs=+acc work.test_seven_segment
+vsim -voptargs=+acc work.testcounter
 view structure wave signals
 
 do wave.do

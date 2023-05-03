@@ -1,4 +1,4 @@
-module _421multiplexer(
+module multiplexer_4to1(
 	input logic sel0,
 	input logic sel1,
 	input logic [3:0] In,

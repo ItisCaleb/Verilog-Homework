@@ -1,4 +1,4 @@
-module _3to8_decoder(
+module decoder_3to8(
 	input logic A,
 	input logic B,
 	input logic C,

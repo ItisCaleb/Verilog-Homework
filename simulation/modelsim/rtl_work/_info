@@ -1,0 +1,248 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\user\Downloads\Verilog-Homework\simulation\modelsim
+vadd_sub_4bits
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+!i10b 1
+Z2 !s100 1zRPRaYUO21oH9jTQnSb40
+Z3 I@QGI0@Gh9kY=2GZTd5[HS0
+Z4 VQUQh:Nj8UC<lj6IQSiLC12
+Z5 !s105 add_sub_4bits_sv_unit
+S1
+Z6 dC:\Users\user\Downloads\Verilog-Homework\simulation\modelsim
+Z7 w1683093581
+Z8 8../../design/components/add_sub_4bits.sv
+Z9 F../../design/components/add_sub_4bits.sv
+L0 1
+Z10 OV;L;10.1d;51
+r1
+!s85 0
+31
+Z11 !s108 1683096747.487000
+Z12 !s107 ../../design/components/seven_segment.sv|../../design/components/multiplexer_4to1.sv|../../design/components/full_adder.sv|../../design/components/dff_pos.sv|../../design/components/decoder_3to8.sv|../../design/components/counter_4bits.sv|../../design/components/counter_3bits.sv|../../design/components/counter_2bits.sv|../../design/components/add_sub_4bits.sv|
+Z13 !s90 -reportprogress|300|../../design/components/add_sub_4bits.sv|../../design/components/counter_2bits.sv|../../design/components/counter_3bits.sv|../../design/components/counter_4bits.sv|../../design/components/decoder_3to8.sv|../../design/components/dff_pos.sv|../../design/components/full_adder.sv|../../design/components/multiplexer_4to1.sv|../../design/components/seven_segment.sv|
+!s101 -O0
+o-O0
+vcounter_2bits
+R1
+!i10b 1
+Z14 !s100 eazIJC>:N6gcATEFWJj?02
+Z15 ITRigF3=XG6XJ>;_WZVYDW0
+Z16 VTPC=NPoj4RPV5kD8QKM_N1
+Z17 !s105 counter_2bits_sv_unit
+S1
+R6
+Z18 w1683093734
+Z19 8../../design/components/counter_2bits.sv
+Z20 F../../design/components/counter_2bits.sv
+L0 1
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!s101 -O0
+o-O0
+vcounter_3bits
+R1
+!i10b 1
+Z21 !s100 T>:>@EfVS^SEz;`I=1dKJ3
+Z22 IeWm2DdCb[IB>9O^zcBLdU2
+Z23 V:4@93HY[gQCO;6LKKXEl>1
+Z24 !s105 counter_3bits_sv_unit
+S1
+R6
+Z25 w1683095513
+Z26 8../../design/components/counter_3bits.sv
+Z27 F../../design/components/counter_3bits.sv
+L0 1
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!s101 -O0
+o-O0
+vcounter_4bits
+R1
+!i10b 1
+Z28 !s100 U=oG805BFo@fLk@hiZlnh3
+Z29 I3_L8[SKg4Z@o3FVdi<`OX1
+Z30 VmQgTn[FE?I;QgXWg>[LbY2
+Z31 !s105 counter_4bits_sv_unit
+S1
+R6
+Z32 w1683095528
+Z33 8../../design/components/counter_4bits.sv
+Z34 F../../design/components/counter_4bits.sv
+L0 1
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!s101 -O0
+o-O0
+vdecoder_3to8
+R1
+!i10b 1
+Z35 !s100 TCHmfIg[mP<1lO>_E;iCn3
+Z36 ID:Z@0Ab8iiM;P?Jzdz=4U0
+Z37 VZWUG93?R6DMfIF]hbZkER0
+Z38 !s105 decoder_3to8_sv_unit
+S1
+R6
+Z39 w1683093591
+Z40 8../../design/components/decoder_3to8.sv
+Z41 F../../design/components/decoder_3to8.sv
+L0 1
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!s101 -O0
+o-O0
+vdff_pos
+R1
+!i10b 1
+Z42 !s100 mmhI?37JGeGbZ9h_e^f?g0
+Z43 IH9=^a;mA3@AN8ndAooD0o0
+Z44 VPE@;]]ZLS3i@z07<Q>X=01
+Z45 !s105 dff_pos_sv_unit
+S1
+R6
+Z46 w1683093453
+Z47 8../../design/components/dff_pos.sv
+Z48 F../../design/components/dff_pos.sv
+L0 1
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!s101 -O0
+o-O0
+vfull_adder
+R1
+!i10b 1
+Z49 !s100 m9Aand1AiACAICJZ75QJB3
+Z50 I3ghGhZNHB1=C:eY]Y1gH91
+Z51 VNE_DOBiZE>HPFMG5_Bc1?2
+Z52 !s105 full_adder_sv_unit
+S1
+R6
+Z53 w1683090842
+Z54 8../../design/components/full_adder.sv
+Z55 F../../design/components/full_adder.sv
+L0 1
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!s101 -O0
+o-O0
+vmcu
+R1
+Z56 IE=M7zLN0XMZ03OA6F6SKW2
+Z57 V]YjK=Qk:n2YKQ3RJ8;PoG2
+S1
+R6
+Z58 w1683096391
+Z59 8C:/Users/user/Downloads/Verilog-Homework/design/mcu.sv
+Z60 FC:/Users/user/Downloads/Verilog-Homework/design/mcu.sv
+L0 6
+R10
+r1
+31
+Z61 o-sv -work work -O0
+Z62 !s100 1J:CVzgjd2VgA=d:Rc7bh3
+Z63 !s105 mcu_sv_unit
+Z64 !s108 1683096610.592000
+Z65 !s107 C:/Users/user/Downloads/Verilog-Homework/design/mcu.sv|
+Z66 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/user/Downloads/Verilog-Homework/design|C:/Users/user/Downloads/Verilog-Homework/design/mcu.sv|
+Z67 !s92 -sv -work work +incdir+C:/Users/user/Downloads/Verilog-Homework/design -O0
+!i10b 1
+!s85 0
+!s101 -O0
+vmultiplexer_4to1
+R1
+!i10b 1
+Z68 !s100 bKHYNb9mTP=O?aR_LMDGI3
+Z69 IJY0EPW]9H=363G6hcddZ`2
+Z70 V2hHI4B0[]ihJZ7hf:NeVM1
+Z71 !s105 multiplexer_4to1_sv_unit
+S1
+R6
+Z72 w1683094485
+Z73 8../../design/components/multiplexer_4to1.sv
+Z74 F../../design/components/multiplexer_4to1.sv
+L0 1
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!s101 -O0
+o-O0
+vseven_segment
+R1
+!i10b 1
+Z75 !s100 j_4=1h][4iC>[7Xgz_:ma1
+Z76 IGH9VkneZIkWK4;Ozn8UAn3
+Z77 V5HHPhBoZBS8FAC^=WK]L21
+Z78 !s105 seven_segment_sv_unit
+S1
+R6
+R53
+Z79 8../../design/components/seven_segment.sv
+Z80 F../../design/components/seven_segment.sv
+L0 1
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!s101 -O0
+o-O0
+vtestcounter
+R1
+Z81 IQiD:WfiV8UMKUzM]T8GcY0
+Z82 VfkQzk@2E]iYP5f1I40do`1
+Z83 !s105 test_counter_sv_unit
+S1
+R6
+Z84 w1683096742
+Z85 8../tb/test_counter.sv
+Z86 F../tb/test_counter.sv
+L0 1
+R10
+r1
+31
+Z87 !s90 -reportprogress|300|../tb/test_counter.sv|
+o-O0
+!i10b 1
+Z88 !s100 A^8R6Vd9E>XkVj<2UB5Mj1
+!s85 0
+Z89 !s108 1683096747.416000
+Z90 !s107 ../tb/test_counter.sv|
+!s101 -O0

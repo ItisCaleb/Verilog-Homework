@@ -6,7 +6,7 @@ module test_4bits_add_sub;
     logic C;
 	logic [3:0] S;
 	logic V;
-    _4bits_add_sub add_sub(
+    add_sub_4bits add_sub(
         .A(A),
         .B(B),
         .M(M),

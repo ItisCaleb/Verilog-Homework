@@ -27,20 +27,18 @@ module mcu(
 //*******************************//
 
 // add module here
-logic [3:0] S;
-logic C,V;
-_4bits_add_sub as(
-	.A(SW[3:0]),
-	.B(SW[8:5]),
-	.M(SW[4]),
-	.S(S),
-	.C(C),
-	.V(V)
-);
-seven_segment s7(
-    .in(S),
-    .out(HEX0)
-);
+    logic [3:0] q;
+    logic y;
+    counter_4bits counter(
+        .clk(BTN[0]),
+        .reset(~BTN[1]),
+        .counter(q),
+        .y(y)
+    );
+	seven_segment s7(
+    	.in(q),
+    	.out(HEX0)
+	);
 
 //*******************************//
 

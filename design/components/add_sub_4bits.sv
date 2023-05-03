@@ -1,4 +1,4 @@
-module _4bits_add_sub(
+module add_sub_4bits(
     input [3:0] A,
     input [3:0] B,
     input M,

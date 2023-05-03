@@ -10,110 +10,106 @@
 # ** Warning: Copied C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vlog -sv -work work +incdir+C:/Users/user/Downloads/de0_empty(1)/design {C:/Users/user/Downloads/de0_empty(1)/design/seven_segment.sv}
+# vlog -sv -work work +incdir+C:/Users/user/Downloads/Verilog-Homework/design/components {C:/Users/user/Downloads/Verilog-Homework/design/components/counter_4bits.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter_4bits
+# 
+# Top level modules:
+# 	counter_4bits
+# vlog -sv -work work +incdir+C:/Users/user/Downloads/Verilog-Homework/design/components {C:/Users/user/Downloads/Verilog-Homework/design/components/dff_pos.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dff_pos
+# 
+# Top level modules:
+# 	dff_pos
+# vlog -sv -work work +incdir+C:/Users/user/Downloads/Verilog-Homework/design/components {C:/Users/user/Downloads/Verilog-Homework/design/components/seven_segment.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module seven_segment
 # 
 # Top level modules:
 # 	seven_segment
-# vlog -sv -work work +incdir+C:/Users/user/Downloads/de0_empty(1)/design {C:/Users/user/Downloads/de0_empty(1)/design/full_adder.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# vlog -sv -work work +incdir+C:/Users/user/Downloads/de0_empty(1)/design {C:/Users/user/Downloads/de0_empty(1)/design/4bits_add_sub.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module _4bits_add_sub
-# 
-# Top level modules:
-# 	_4bits_add_sub
-# vlog -sv -work work +incdir+C:/Users/user/Downloads/de0_empty(1)/design {C:/Users/user/Downloads/de0_empty(1)/design/mcu.sv}
+# vlog -sv -work work +incdir+C:/Users/user/Downloads/Verilog-Homework/design {C:/Users/user/Downloads/Verilog-Homework/design/mcu.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module mcu
 # 
 # Top level modules:
 # 	mcu
 # 
-do sim.do
-# vsim -voptargs=+acc work.test_4bits_add_sub 
-# ** Error: (vsim-3170) Could not find 'C:/Users/user/Downloads/de0_empty(1)/simulation/modelsim/rtl_work.test_4bits_add_sub'.
-# 
-# Error loading design
-# Error: Error loading design 
-#        Pausing macro execution 
-# MACRO ./sim.do PAUSED at line 1
 do compile.do
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module test_4bits_add_sub
+# -- Compiling module testcounter
 # 
 # Top level modules:
-# 	test_4bits_add_sub
+# 	testcounter
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module test_seven_segment
-# 
-# Top level modules:
-# 	test_seven_segment
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module add_sub_4bits
+# -- Compiling module counter_2bits
+# -- Compiling module counter_3bits
+# -- Compiling module counter_4bits
+# -- Compiling module decoder_3to8
+# -- Compiling module dff_pos
 # -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module _4bits_add_sub
-# 
-# Top level modules:
-# 	_4bits_add_sub
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module multiplexer_4to1
 # -- Compiling module seven_segment
 # 
 # Top level modules:
+# 	add_sub_4bits
+# 	counter_2bits
+# 	counter_3bits
+# 	counter_4bits
+# 	decoder_3to8
+# 	multiplexer_4to1
 # 	seven_segment
 do sim.do
-# vsim -voptargs=+acc work.test_4bits_add_sub 
+# vsim -voptargs=+acc work.testcounter 
 # Loading sv_std.std
-# Loading work.test_4bits_add_sub
-# Loading work._4bits_add_sub
-# Loading work.full_adder
+# Loading work.testcounter
+# Loading work.counter_3bits
+# Loading work.dff_pos
 # .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
-#                    0: A= 7, B= 6, M=0, S=13, C=0, V=1
-#                   10: A= 8, B= 9, M=0, S= 1, C=1, V=1
-#                   20: A=12, B= 8, M=1, S= 4, C=1, V=0
-#                   30: A= 5, B=10, M=1, S=11, C=0, V=1
-#                   40: A= 0, B= 1, M=1, S=15, C=0, V=0
-# Break in Module test_4bits_add_sub at ../tb/test_4bits_add_sub.sv line 25
-# Simulation Breakpoint: Break in Module test_4bits_add_sub at ../tb/test_4bits_add_sub.sv line 25
+# Break in Module testcounter at ../tb/test_counter.sv line 15
+# Simulation Breakpoint: Break in Module testcounter at ../tb/test_counter.sv line 15
 # MACRO ./sim.do PAUSED at line 7
-add wave -position end  sim:/test_4bits_add_sub/A
-add wave -position end  sim:/test_4bits_add_sub/B
-add wave -position end  sim:/test_4bits_add_sub/C
-add wave -position end  sim:/test_4bits_add_sub/M
-add wave -position end  sim:/test_4bits_add_sub/S
-add wave -position end  sim:/test_4bits_add_sub/V
+add wave -position end  sim:/testcounter/clk
+add wave -position end  sim:/testcounter/reset
+add wave -position end  sim:/testcounter/q
+add wave -position end  sim:/testcounter/y
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testcounter
+# 
+# Top level modules:
+# 	testcounter
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module add_sub_4bits
+# -- Compiling module counter_2bits
+# -- Compiling module counter_3bits
+# -- Compiling module counter_4bits
+# -- Compiling module decoder_3to8
+# -- Compiling module dff_pos
+# -- Compiling module full_adder
+# -- Compiling module multiplexer_4to1
+# -- Compiling module seven_segment
+# 
+# Top level modules:
+# 	add_sub_4bits
+# 	counter_2bits
+# 	counter_3bits
+# 	counter_4bits
+# 	decoder_3to8
+# 	multiplexer_4to1
+# 	seven_segment
 do sim.do
-# vsim -voptargs=+acc work.test_seven_segment 
+# vsim -voptargs=+acc work.testcounter 
 # Loading sv_std.std
-# Loading work.test_seven_segment
-# Loading work.seven_segment
+# Loading work.testcounter
+# Loading work.counter_4bits
+# Loading work.dff_pos
 # .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
-#                    0: in= 0, out= 64
-#                   10: in= 1, out=121
-#                   20: in= 2, out= 36
-#                   30: in= 3, out= 48
-#                   40: in= 4, out= 25
-#                   50: in= 5, out= 18
-#                   60: in= 6, out=  2
-#                   70: in= 7, out=120
-#                   80: in= 8, out=  0
-#                   90: in= 9, out= 16
-#                  100: in=10, out=  8
-#                  110: in=11, out=  3
-#                  120: in=12, out= 70
-#                  130: in=13, out= 33
-#                  140: in=14, out=  6
-#                  150: in=15, out= 14
-# Break in Module test_seven_segment at ../tb/test_seven_segment.sv line 26
-# Simulation Breakpoint: Break in Module test_seven_segment at ../tb/test_seven_segment.sv line 26
+# Break in Module testcounter at ../tb/test_counter.sv line 15
+# Simulation Breakpoint: Break in Module testcounter at ../tb/test_counter.sv line 15
 # MACRO ./sim.do PAUSED at line 7
-add wave -position end  sim:/test_seven_segment/in
-add wave -position end  sim:/test_seven_segment/out
+add wave -position end  sim:/testcounter/clk
+add wave -position end  sim:/testcounter/reset
+add wave -position end  sim:/testcounter/q
+add wave -position end  sim:/testcounter/y
