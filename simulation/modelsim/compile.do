@@ -2,8 +2,9 @@
 
 
 # ------------------------------------------------------------
-vlog ../tb/test_counter.sv
-vlog ../../design/components/*
+vlog ../tb/test_RGY.sv
+vlog ../../design/components/*.sv
+vlog ../../design/*.sv
 
 
 
