@@ -27,17 +27,37 @@ module mcu(
 //*******************************//
 
 // add module here
-    logic [3:0] q;
-    logic y;
-    counter_4bits counter(
-        .clk(BTN[0]),
-        .reset(~BTN[1]),
-        .counter(q),
-        .y(y)
+    logic clk_out;
+    logic [2:0] sec_tens, min_tens;
+    logic [3:0] sec_units, min_units;
+	freg_div_23 fre_23(
+		.clk(CLK),
+		.reset(~BTN[0]),
+		.clk_out(clk_out)
+	);
+    timer_h t1(
+        .clk(clk_out),
+        .reset(~BTN[0]),
+        .min_tens(sec_tens),
+        .hour_tens(min_tens),
+        .min_units(sec_units),
+        .hour_units(min_units)
     );
-	seven_segment s7(
-    	.in(q),
+	seven_segment s0(
+    	.in(sec_units),
     	.out(HEX0)
+	);
+	seven_segment s1(
+    	.in(sec_tens),
+    	.out(HEX1)
+	);
+	seven_segment s2(
+    	.in(min_units),
+    	.out(HEX2)
+	);
+	seven_segment s3(
+    	.in(min_tens),
+    	.out(HEX3)
 	);
 
 //*******************************//

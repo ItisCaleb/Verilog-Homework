@@ -2,40 +2,76 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'BTN[0]'
-Slack : -0.147
-TNS   : -0.147
+Type  : Slow 1200mV 85C Model Setup 'freg_div_23:fre_23|q[18]'
+Slack : -1.631
+TNS   : -16.665
 
-Type  : Slow 1200mV 85C Model Hold 'BTN[0]'
-Slack : 0.382
+Type  : Slow 1200mV 85C Model Setup 'CLK'
+Slack : -1.376
+TNS   : -14.281
+
+Type  : Slow 1200mV 85C Model Hold 'CLK'
+Slack : -0.080
+TNS   : -0.080
+
+Type  : Slow 1200mV 85C Model Hold 'freg_div_23:fre_23|q[18]'
+Slack : 0.359
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'BTN[0]'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
 Slack : -3.000
-TNS   : -7.000
+TNS   : -22.000
 
-Type  : Slow 1200mV 0C Model Setup 'BTN[0]'
-Slack : -0.031
-TNS   : -0.031
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'freg_div_23:fre_23|q[18]'
+Slack : -1.000
+TNS   : -14.000
 
-Type  : Slow 1200mV 0C Model Hold 'BTN[0]'
-Slack : 0.333
+Type  : Slow 1200mV 0C Model Setup 'freg_div_23:fre_23|q[18]'
+Slack : -1.373
+TNS   : -13.621
+
+Type  : Slow 1200mV 0C Model Setup 'CLK'
+Slack : -1.092
+TNS   : -10.561
+
+Type  : Slow 1200mV 0C Model Hold 'CLK'
+Slack : -0.089
+TNS   : -0.089
+
+Type  : Slow 1200mV 0C Model Hold 'freg_div_23:fre_23|q[18]'
+Slack : 0.313
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'BTN[0]'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
 Slack : -3.000
-TNS   : -7.000
+TNS   : -22.000
 
-Type  : Fast 1200mV 0C Model Setup 'BTN[0]'
-Slack : 0.383
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'freg_div_23:fre_23|q[18]'
+Slack : -1.000
+TNS   : -14.000
+
+Type  : Fast 1200mV 0C Model Setup 'freg_div_23:fre_23|q[18]'
+Slack : -0.481
+TNS   : -3.157
+
+Type  : Fast 1200mV 0C Model Setup 'CLK'
+Slack : -0.352
+TNS   : -1.215
+
+Type  : Fast 1200mV 0C Model Hold 'CLK'
+Slack : -0.110
+TNS   : -0.110
+
+Type  : Fast 1200mV 0C Model Hold 'freg_div_23:fre_23|q[18]'
+Slack : 0.187
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'BTN[0]'
-Slack : 0.201
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'BTN[0]'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
 Slack : -3.000
-TNS   : -7.628
+TNS   : -23.209
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'freg_div_23:fre_23|q[18]'
+Slack : -1.000
+TNS   : -14.000
 
 ------------------------------------------------------------

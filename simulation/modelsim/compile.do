@@ -2,7 +2,7 @@
 
 
 # ------------------------------------------------------------
-vlog ../tb/test_RGY.sv
+vlog ../tb/test_timer.sv
 vlog ../../design/components/*.sv
 vlog ../../design/*.sv
 

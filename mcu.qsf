@@ -108,15 +108,15 @@ set_location_assignment PIN_D2 -to SW[9]
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name SYSTEMVERILOG_FILE design/components/timer_h.sv
+set_global_assignment -name SYSTEMVERILOG_FILE design/components/freg_div_23.sv
+set_global_assignment -name SYSTEMVERILOG_FILE design/components/unit_digit.sv
+set_global_assignment -name SYSTEMVERILOG_FILE design/components/timer.sv
+set_global_assignment -name SYSTEMVERILOG_FILE design/components/ten_digit.sv
 set_global_assignment -name SYSTEMVERILOG_FILE design/components/up_down_counter_4bits.sv
-set_global_assignment -name SYSTEMVERILOG_FILE design/components/RGY_combination.sv
-set_global_assignment -name SYSTEMVERILOG_FILE design/RGY_top.sv
 set_global_assignment -name SYSTEMVERILOG_FILE design/components/multiplexer_4to1.sv
 set_global_assignment -name SYSTEMVERILOG_FILE design/components/decoder_3to8.sv
 set_global_assignment -name SYSTEMVERILOG_FILE design/components/add_sub_4bits.sv
-set_global_assignment -name SYSTEMVERILOG_FILE design/components/counter_4bits.sv
-set_global_assignment -name SYSTEMVERILOG_FILE design/components/counter_3bits.sv
-set_global_assignment -name SYSTEMVERILOG_FILE design/components/counter_2bits.sv
 set_global_assignment -name SYSTEMVERILOG_FILE design/components/dff_pos.sv
 set_global_assignment -name SYSTEMVERILOG_FILE design/components/seven_segment.sv
 set_global_assignment -name SYSTEMVERILOG_FILE design/components/full_adder.sv

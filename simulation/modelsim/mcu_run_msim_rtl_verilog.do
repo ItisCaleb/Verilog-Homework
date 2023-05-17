@@ -5,8 +5,8 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vlog -sv -work work +incdir+E:/Verilog-Homework/design/components {E:/Verilog-Homework/design/components/counter_4bits.sv}
-vlog -sv -work work +incdir+E:/Verilog-Homework/design/components {E:/Verilog-Homework/design/components/dff_pos.sv}
-vlog -sv -work work +incdir+E:/Verilog-Homework/design/components {E:/Verilog-Homework/design/components/seven_segment.sv}
-vlog -sv -work work +incdir+E:/Verilog-Homework/design {E:/Verilog-Homework/design/mcu.sv}
+vlog -sv -work work +incdir+C:/Users/user/Desktop/Verilog-Homework/design/components {C:/Users/user/Desktop/Verilog-Homework/design/components/counter_4bits.sv}
+vlog -sv -work work +incdir+C:/Users/user/Desktop/Verilog-Homework/design/components {C:/Users/user/Desktop/Verilog-Homework/design/components/dff_pos.sv}
+vlog -sv -work work +incdir+C:/Users/user/Desktop/Verilog-Homework/design/components {C:/Users/user/Desktop/Verilog-Homework/design/components/seven_segment.sv}
+vlog -sv -work work +incdir+C:/Users/user/Desktop/Verilog-Homework/design {C:/Users/user/Desktop/Verilog-Homework/design/mcu.sv}
 

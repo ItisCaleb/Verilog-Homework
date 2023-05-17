@@ -1,4 +1,4 @@
-module testRGY;
+module test_RGY;
     logic clk, reset;
     logic [1:0] r,g,y;
     RGY_top RGY(

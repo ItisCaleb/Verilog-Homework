@@ -10,25 +10,25 @@
 # ** Warning: Copied C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vlog -sv -work work +incdir+E:/Verilog-Homework/design/components {E:/Verilog-Homework/design/components/counter_4bits.sv}
+# vlog -sv -work work +incdir+C:/Users/user/Desktop/Verilog-Homework/design/components {C:/Users/user/Desktop/Verilog-Homework/design/components/counter_4bits.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module counter_4bits
 # 
 # Top level modules:
 # 	counter_4bits
-# vlog -sv -work work +incdir+E:/Verilog-Homework/design/components {E:/Verilog-Homework/design/components/dff_pos.sv}
+# vlog -sv -work work +incdir+C:/Users/user/Desktop/Verilog-Homework/design/components {C:/Users/user/Desktop/Verilog-Homework/design/components/dff_pos.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module dff_pos
 # 
 # Top level modules:
 # 	dff_pos
-# vlog -sv -work work +incdir+E:/Verilog-Homework/design/components {E:/Verilog-Homework/design/components/seven_segment.sv}
+# vlog -sv -work work +incdir+C:/Users/user/Desktop/Verilog-Homework/design/components {C:/Users/user/Desktop/Verilog-Homework/design/components/seven_segment.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module seven_segment
 # 
 # Top level modules:
 # 	seven_segment
-# vlog -sv -work work +incdir+E:/Verilog-Homework/design {E:/Verilog-Homework/design/mcu.sv}
+# vlog -sv -work work +incdir+C:/Users/user/Desktop/Verilog-Homework/design {C:/Users/user/Desktop/Verilog-Homework/design/mcu.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module mcu
 # 
@@ -37,10 +37,10 @@
 # 
 do compile.do
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module testcounter
+# -- Compiling module test_timer
 # 
 # Top level modules:
-# 	testcounter
+# 	test_timer
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module RGY_combination
 # -- Compiling module add_sub_4bits
@@ -52,147 +52,12 @@ do compile.do
 # -- Compiling module full_adder
 # -- Compiling module multiplexer_4to1
 # -- Compiling module seven_segment
+# -- Compiling module ten_digit
+# ** Error: ../../design/components/ten_digit.sv(34): (vlog-2884) Out of bounds access.  Bit number 3 of part-select into 'q' is out of bounds.
+# 
+# -- Compiling module timer
+# -- Compiling module unit_digit
 # -- Compiling module up_down_counter_4bits
-# 
-# Top level modules:
-# 	RGY_combination
-# 	add_sub_4bits
-# 	counter_2bits
-# 	counter_3bits
-# 	counter_4bits
-# 	decoder_3to8
-# 	multiplexer_4to1
-# 	seven_segment
-# 	up_down_counter_4bits
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module _4bits_add_sub
-# ** Error: ../../design/4bits_add_sub.sv.bak(9): near ",": Syntax error.
-# ** Error: ../../design/4bits_add_sub.sv.bak(10): near ",": Syntax error.
-# ** Error: ../../design/4bits_add_sub.sv.bak(23): near "full_adder": syntax error, unexpected IDENTIFIER, expecting ';' or ','
-# ** Warning: ../../design/4bits_add_sub.sv.bak(46): (vlog-2283) Extra semicolon in $unit (global) scope.
-# 
-# -- Compiling module RGY_top
-# ** Error: (vlog-7) Failed to open design unit file "../../design/components" in read mode.
-# 
-# Permission denied. (errno = EACCES)
-# ** Warning: ../../design/RGY_top.sv(19): (vlog-2284) Empty $unit scope found.
-# 
-# -- Compiling module mcu
-# ** Warning: ../../design/mcu.sv.bak(6): (vlog-2275) 'mcu' already exists and will be overwritten.
-# 
-# -- Compiling module mcu
-# ** Error: C:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./compile.do line 7
-# C:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog ../../design/*"
-do compile.do
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module testcounter
-# 
-# Top level modules:
-# 	testcounter
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module RGY_combination
-# -- Compiling module add_sub_4bits
-# -- Compiling module counter_2bits
-# -- Compiling module counter_3bits
-# -- Compiling module counter_4bits
-# -- Compiling module decoder_3to8
-# -- Compiling module dff_pos
-# -- Compiling module full_adder
-# -- Compiling module multiplexer_4to1
-# -- Compiling module seven_segment
-# -- Compiling module up_down_counter_4bits
-# 
-# Top level modules:
-# 	RGY_combination
-# 	add_sub_4bits
-# 	counter_2bits
-# 	counter_3bits
-# 	counter_4bits
-# 	decoder_3to8
-# 	multiplexer_4to1
-# 	seven_segment
-# 	up_down_counter_4bits
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module RGY_top
-# -- Compiling module mcu
-# 
-# Top level modules:
-# 	RGY_top
-# 	mcu
-do sim.do
-# vsim -voptargs=+acc work.testcounter 
-# Loading sv_std.std
-# Loading work.testcounter
-# Loading work.up_down_counter_4bits
-# Loading work.dff_pos
-# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
-# Break in Module testcounter at ../tb/test_counter.sv line 15
-# Simulation Breakpoint: Break in Module testcounter at ../tb/test_counter.sv line 15
-# MACRO ./sim.do PAUSED at line 7
-add wave -position end  sim:/testcounter/x
-add wave -position end  sim:/testcounter/reset
-add wave -position end  sim:/testcounter/q
-add wave -position end  sim:/testcounter/clk
-do compile.do
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module testcounter
-# 
-# Top level modules:
-# 	testcounter
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module RGY_combination
-# -- Compiling module add_sub_4bits
-# -- Compiling module counter_2bits
-# -- Compiling module counter_3bits
-# -- Compiling module counter_4bits
-# -- Compiling module decoder_3to8
-# -- Compiling module dff_pos
-# -- Compiling module full_adder
-# -- Compiling module multiplexer_4to1
-# -- Compiling module seven_segment
-# -- Compiling module up_down_counter_4bits
-# ** Error: ../../design/components/up_down_counter_4bits.sv(38): near "assign": syntax error, unexpected assign, expecting ';' or ','
-# ** Error: C:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./compile.do line 6
-# C:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog ../../design/components/*.sv"
-do sim.do
-# vsim -voptargs=+acc work.testcounter 
-# Loading sv_std.std
-# Loading work.testcounter
-# Loading work.up_down_counter_4bits
-# Loading work.dff_pos
-# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
-# Break in Module testcounter at ../tb/test_counter.sv line 15
-# Simulation Breakpoint: Break in Module testcounter at ../tb/test_counter.sv line 15
-# MACRO ./sim.do PAUSED at line 7
-add wave -position end  sim:/testcounter/x
-add wave -position end  sim:/testcounter/reset
-add wave -position end  sim:/testcounter/q
-add wave -position end  sim:/testcounter/clk
-do compile.do
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module testcounter
-# 
-# Top level modules:
-# 	testcounter
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module RGY_combination
-# -- Compiling module add_sub_4bits
-# -- Compiling module counter_2bits
-# -- Compiling module counter_3bits
-# -- Compiling module counter_4bits
-# -- Compiling module decoder_3to8
-# -- Compiling module dff_pos
-# -- Compiling module full_adder
-# -- Compiling module multiplexer_4to1
-# -- Compiling module seven_segment
-# -- Compiling module up_down_counter_4bits
-# ** Error: ../../design/components/up_down_counter_4bits.sv(38): near "assign": syntax error, unexpected assign, expecting ';' or ','
 # ** Error: C:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
 # Error in macro ./compile.do line 6
 # C:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
@@ -200,10 +65,10 @@ do compile.do
 # "vlog ../../design/components/*.sv"
 do compile.do
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module testcounter
+# -- Compiling module test_timer
 # 
 # Top level modules:
-# 	testcounter
+# 	test_timer
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module RGY_combination
 # -- Compiling module add_sub_4bits
@@ -215,6 +80,9 @@ do compile.do
 # -- Compiling module full_adder
 # -- Compiling module multiplexer_4to1
 # -- Compiling module seven_segment
+# -- Compiling module ten_digit
+# -- Compiling module timer
+# -- Compiling module unit_digit
 # -- Compiling module up_down_counter_4bits
 # 
 # Top level modules:
@@ -226,6 +94,7 @@ do compile.do
 # 	decoder_3to8
 # 	multiplexer_4to1
 # 	seven_segment
+# 	timer
 # 	up_down_counter_4bits
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module RGY_top
@@ -235,144 +104,29 @@ do compile.do
 # 	RGY_top
 # 	mcu
 do sim.do
-# vsim -voptargs=+acc work.testcounter 
+# vsim -voptargs=+acc work.test_timer 
 # Loading sv_std.std
-# Loading work.testcounter
-# Loading work.up_down_counter_4bits
+# Loading work.test_timer
+# Loading work.timer
+# Loading work.unit_digit
 # Loading work.dff_pos
-# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
-# Break in Module testcounter at ../tb/test_counter.sv line 15
-# Simulation Breakpoint: Break in Module testcounter at ../tb/test_counter.sv line 15
-# MACRO ./sim.do PAUSED at line 7
-add wave -position end  sim:/testcounter/x
-add wave -position end  sim:/testcounter/reset
-add wave -position end  sim:/testcounter/q
-add wave -position end  sim:/testcounter/clk
-do compile.do
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module testcounter
+# Loading work.ten_digit
+# ** Error: (vsim-3389) ../../design/components/timer.sv(14): Port 'carry' not found in the connected module (5th connection).
 # 
-# Top level modules:
-# 	testcounter
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module RGY_combination
-# -- Compiling module add_sub_4bits
-# -- Compiling module counter_2bits
-# -- Compiling module counter_3bits
-# -- Compiling module counter_4bits
-# -- Compiling module decoder_3to8
-# -- Compiling module dff_pos
-# -- Compiling module full_adder
-# -- Compiling module multiplexer_4to1
-# -- Compiling module seven_segment
-# -- Compiling module up_down_counter_4bits
-# 
-# Top level modules:
-# 	RGY_combination
-# 	add_sub_4bits
-# 	counter_2bits
-# 	counter_3bits
-# 	counter_4bits
-# 	decoder_3to8
-# 	multiplexer_4to1
-# 	seven_segment
-# 	up_down_counter_4bits
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module RGY_top
-# -- Compiling module mcu
-# 
-# Top level modules:
-# 	RGY_top
-# 	mcu
-do sim.do
-# vsim -voptargs=+acc work.testcounter 
-# Loading sv_std.std
-# Loading work.testcounter
-# Loading work.up_down_counter_4bits
-# Loading work.dff_pos
-# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
-# Break in Module testcounter at ../tb/test_counter.sv line 15
-# Simulation Breakpoint: Break in Module testcounter at ../tb/test_counter.sv line 15
-# MACRO ./sim.do PAUSED at line 7
-add wave -position end  sim:/testcounter/x
-add wave -position end  sim:/testcounter/reset
-add wave -position end  sim:/testcounter/q
-add wave -position end  sim:/testcounter/clk
-do compile.do
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# ** Error: (vlog-7) Failed to open design unit file "../tb/testRGY.sv" in read mode.
-# 
-# No such file or directory. (errno = ENOENT)
-# ** Error: C:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./compile.do line 5
-# C:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog ../tb/testRGY.sv"
-do compile.do
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module testRGY
-# 
-# Top level modules:
-# 	testRGY
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module RGY_combination
-# -- Compiling module add_sub_4bits
-# -- Compiling module counter_2bits
-# -- Compiling module counter_3bits
-# -- Compiling module counter_4bits
-# -- Compiling module decoder_3to8
-# -- Compiling module dff_pos
-# -- Compiling module full_adder
-# -- Compiling module multiplexer_4to1
-# -- Compiling module seven_segment
-# -- Compiling module up_down_counter_4bits
-# 
-# Top level modules:
-# 	RGY_combination
-# 	add_sub_4bits
-# 	counter_2bits
-# 	counter_3bits
-# 	counter_4bits
-# 	decoder_3to8
-# 	multiplexer_4to1
-# 	seven_segment
-# 	up_down_counter_4bits
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module RGY_top
-# -- Compiling module mcu
-# 
-# Top level modules:
-# 	RGY_top
-# 	mcu
-do sim.do
-# vsim -voptargs=+acc work.test_RGY 
-# ** Error: (vsim-3170) Could not find 'E:/Verilog-Homework/simulation/modelsim/rtl_work.test_RGY'.
-# 
-# Error loading design
-# Error: Error loading design 
-#        Pausing macro execution 
-# MACRO ./sim.do PAUSED at line 1
-do sim.do
-# vsim -voptargs=+acc work.testRGY 
-# Loading sv_std.std
-# Loading work.testRGY
-# Loading work.RGY_top
-# Loading work.up_down_counter_4bits
-# Loading work.dff_pos
-# Loading work.RGY_combination
-# ** Error: (vsim-3063) ../../design/RGY_top.sv(12): Port 'q' not found in the connected module (4th connection).
-# 
-#         Region: /testRGY/RGY/c1
+#         Region: /test_timer/t1/sec_unit
+# ** Fatal: (vsim-3365) ../../design/components/timer.sv(14): Too many port connections. Expected 4, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /test_timer/t1/sec_unit File: ../../design/components/unit_digit.sv
+# FATAL ERROR while loading design
 # Error loading design
 # Error: Error loading design 
 #        Pausing macro execution 
 # MACRO ./sim.do PAUSED at line 1
 do compile.do
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module testRGY
+# -- Compiling module test_timer
 # 
 # Top level modules:
-# 	testRGY
+# 	test_timer
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module RGY_combination
 # -- Compiling module add_sub_4bits
@@ -384,6 +138,9 @@ do compile.do
 # -- Compiling module full_adder
 # -- Compiling module multiplexer_4to1
 # -- Compiling module seven_segment
+# -- Compiling module ten_digit
+# -- Compiling module timer
+# -- Compiling module unit_digit
 # -- Compiling module up_down_counter_4bits
 # 
 # Top level modules:
@@ -395,6 +152,7 @@ do compile.do
 # 	decoder_3to8
 # 	multiplexer_4to1
 # 	seven_segment
+# 	timer
 # 	up_down_counter_4bits
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module RGY_top
@@ -404,28 +162,26 @@ do compile.do
 # 	RGY_top
 # 	mcu
 do sim.do
-# vsim -voptargs=+acc work.testRGY 
+# vsim -voptargs=+acc work.test_timer 
 # Loading sv_std.std
-# Loading work.testRGY
-# Loading work.RGY_top
-# Loading work.up_down_counter_4bits
+# Loading work.test_timer
+# Loading work.timer
+# Loading work.unit_digit
 # Loading work.dff_pos
-# Loading work.RGY_combination
-# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
-# Break in Module testRGY at ../tb/test_RGY.sv line 15
-# Simulation Breakpoint: Break in Module testRGY at ../tb/test_RGY.sv line 15
-# MACRO ./sim.do PAUSED at line 7
-add wave -position end  sim:/testRGY/y
-add wave -position end  sim:/testRGY/reset
-add wave -position end  sim:/testRGY/r
-add wave -position end  sim:/testRGY/g
-add wave -position end  sim:/testRGY/clk
+# Loading work.ten_digit
+# ** Error: (vsim-3839) ../../design/components/timer.sv(35): Variable '/test_timer/t1/sec_tens_c', driven via a port connection, is multiply driven. See ../../design/components/timer.sv(21).
+# 
+#         Region: /test_timer/t1/min_ten
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./sim.do PAUSED at line 1
 do compile.do
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module testRGY
+# -- Compiling module test_timer
 # 
 # Top level modules:
-# 	testRGY
+# 	test_timer
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module RGY_combination
 # -- Compiling module add_sub_4bits
@@ -437,6 +193,9 @@ do compile.do
 # -- Compiling module full_adder
 # -- Compiling module multiplexer_4to1
 # -- Compiling module seven_segment
+# -- Compiling module ten_digit
+# -- Compiling module timer
+# -- Compiling module unit_digit
 # -- Compiling module up_down_counter_4bits
 # 
 # Top level modules:
@@ -448,6 +207,7 @@ do compile.do
 # 	decoder_3to8
 # 	multiplexer_4to1
 # 	seven_segment
+# 	timer
 # 	up_down_counter_4bits
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module RGY_top
@@ -457,19 +217,20 @@ do compile.do
 # 	RGY_top
 # 	mcu
 do sim.do
-# vsim -voptargs=+acc work.testRGY 
+# vsim -voptargs=+acc work.test_timer 
 # Loading sv_std.std
-# Loading work.testRGY
-# Loading work.RGY_top
-# Loading work.up_down_counter_4bits
+# Loading work.test_timer
+# Loading work.timer
+# Loading work.unit_digit
 # Loading work.dff_pos
-# Loading work.RGY_combination
+# Loading work.ten_digit
 # .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
-# Break in Module testRGY at ../tb/test_RGY.sv line 15
-# Simulation Breakpoint: Break in Module testRGY at ../tb/test_RGY.sv line 15
+# Break in Module test_timer at ../tb/test_timer.sv line 17
+# Simulation Breakpoint: Break in Module test_timer at ../tb/test_timer.sv line 17
 # MACRO ./sim.do PAUSED at line 7
-add wave -position end  sim:/testRGY/y
-add wave -position end  sim:/testRGY/reset
-add wave -position end  sim:/testRGY/r
-add wave -position end  sim:/testRGY/g
-add wave -position end  sim:/testRGY/clk
+add wave -position end  sim:/test_timer/clk
+add wave -position end  sim:/test_timer/reset
+add wave -position end  sim:/test_timer/sec_tens
+add wave -position end  sim:/test_timer/min_tens
+add wave -position end  sim:/test_timer/sec_units
+add wave -position end  sim:/test_timer/min_units

@@ -1,4 +1,4 @@
 library verilog;
 use verilog.vl_types.all;
-entity testcounter is
-end testcounter;
+entity test_timer is
+end test_timer;

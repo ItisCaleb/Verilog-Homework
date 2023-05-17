@@ -1,4 +1,4 @@
-vsim -voptargs=+acc work.testRGY
+vsim -voptargs=+acc work.test_timer
 view structure wave signals
 
 do wave.do

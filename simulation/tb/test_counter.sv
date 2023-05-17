@@ -1,4 +1,4 @@
-module testcounter;
+module test_counter;
     logic clk, reset, x;
     logic [3:0] q;
     up_down_counter_4bits counter(
