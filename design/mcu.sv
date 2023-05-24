@@ -28,36 +28,29 @@ module mcu(
 
 // add module here
     logic clk_out;
-    logic [2:0] sec_tens, min_tens;
-    logic [3:0] sec_units, min_units;
+    logic [3:0] id, date;
 	freg_div_23 fre_23(
 		.clk(CLK),
 		.reset(~BTN[0]),
 		.clk_out(clk_out)
 	);
-    timer_h t1(
+    student_id sid(
         .clk(clk_out),
         .reset(~BTN[0]),
-        .min_tens(sec_tens),
-        .hour_tens(min_tens),
-        .min_units(sec_units),
-        .hour_units(min_units)
+        .id(id)
+    );
+	birthdate bd(
+        .clk(clk_out),
+        .reset(~BTN[0]),
+        .date(date)
     );
 	seven_segment s0(
-    	.in(sec_units),
+    	.in(id),
     	.out(HEX0)
 	);
 	seven_segment s1(
-    	.in(sec_tens),
+    	.in(date),
     	.out(HEX1)
-	);
-	seven_segment s2(
-    	.in(min_units),
-    	.out(HEX2)
-	);
-	seven_segment s3(
-    	.in(min_tens),
-    	.out(HEX3)
 	);
 
 //*******************************//

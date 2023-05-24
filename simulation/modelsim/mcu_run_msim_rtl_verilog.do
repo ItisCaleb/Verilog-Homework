@@ -5,8 +5,10 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vlog -sv -work work +incdir+C:/Users/user/Desktop/Verilog-Homework/design/components {C:/Users/user/Desktop/Verilog-Homework/design/components/counter_4bits.sv}
-vlog -sv -work work +incdir+C:/Users/user/Desktop/Verilog-Homework/design/components {C:/Users/user/Desktop/Verilog-Homework/design/components/dff_pos.sv}
-vlog -sv -work work +incdir+C:/Users/user/Desktop/Verilog-Homework/design/components {C:/Users/user/Desktop/Verilog-Homework/design/components/seven_segment.sv}
-vlog -sv -work work +incdir+C:/Users/user/Desktop/Verilog-Homework/design {C:/Users/user/Desktop/Verilog-Homework/design/mcu.sv}
+vlog -sv -work work +incdir+C:/Users/user/Downloads/Verilog-Homework/design {C:/Users/user/Downloads/Verilog-Homework/design/birthdate.sv}
+vlog -sv -work work +incdir+C:/Users/user/Downloads/Verilog-Homework/design {C:/Users/user/Downloads/Verilog-Homework/design/student_id.sv}
+vlog -sv -work work +incdir+C:/Users/user/Downloads/Verilog-Homework/design/components {C:/Users/user/Downloads/Verilog-Homework/design/components/freg_div_23.sv}
+vlog -sv -work work +incdir+C:/Users/user/Downloads/Verilog-Homework/design/components {C:/Users/user/Downloads/Verilog-Homework/design/components/dff_pos.sv}
+vlog -sv -work work +incdir+C:/Users/user/Downloads/Verilog-Homework/design/components {C:/Users/user/Downloads/Verilog-Homework/design/components/seven_segment.sv}
+vlog -sv -work work +incdir+C:/Users/user/Downloads/Verilog-Homework/design {C:/Users/user/Downloads/Verilog-Homework/design/mcu.sv}
 

@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP3C16F484) Path("C:/Users/user/Desktop/Verilog-Homework/output_files/") File("mcu.sof") MfrSpec(OpMask(1));
+		Device PartName(EP3C16F484) Path("C:/Users/user/Downloads/Verilog-Homework/output_files/") File("mcu.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

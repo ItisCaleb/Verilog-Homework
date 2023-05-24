@@ -10,25 +10,37 @@
 # ** Warning: Copied C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vlog -sv -work work +incdir+C:/Users/user/Desktop/Verilog-Homework/design/components {C:/Users/user/Desktop/Verilog-Homework/design/components/counter_4bits.sv}
+# vlog -sv -work work +incdir+C:/Users/user/Downloads/Verilog-Homework/design {C:/Users/user/Downloads/Verilog-Homework/design/birthdate.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module counter_4bits
+# -- Compiling module birthdate
 # 
 # Top level modules:
-# 	counter_4bits
-# vlog -sv -work work +incdir+C:/Users/user/Desktop/Verilog-Homework/design/components {C:/Users/user/Desktop/Verilog-Homework/design/components/dff_pos.sv}
+# 	birthdate
+# vlog -sv -work work +incdir+C:/Users/user/Downloads/Verilog-Homework/design {C:/Users/user/Downloads/Verilog-Homework/design/student_id.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module student_id
+# 
+# Top level modules:
+# 	student_id
+# vlog -sv -work work +incdir+C:/Users/user/Downloads/Verilog-Homework/design/components {C:/Users/user/Downloads/Verilog-Homework/design/components/freg_div_23.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module freg_div_23
+# 
+# Top level modules:
+# 	freg_div_23
+# vlog -sv -work work +incdir+C:/Users/user/Downloads/Verilog-Homework/design/components {C:/Users/user/Downloads/Verilog-Homework/design/components/dff_pos.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module dff_pos
 # 
 # Top level modules:
 # 	dff_pos
-# vlog -sv -work work +incdir+C:/Users/user/Desktop/Verilog-Homework/design/components {C:/Users/user/Desktop/Verilog-Homework/design/components/seven_segment.sv}
+# vlog -sv -work work +incdir+C:/Users/user/Downloads/Verilog-Homework/design/components {C:/Users/user/Downloads/Verilog-Homework/design/components/seven_segment.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module seven_segment
 # 
 # Top level modules:
 # 	seven_segment
-# vlog -sv -work work +incdir+C:/Users/user/Desktop/Verilog-Homework/design {C:/Users/user/Desktop/Verilog-Homework/design/mcu.sv}
+# vlog -sv -work work +incdir+C:/Users/user/Downloads/Verilog-Homework/design {C:/Users/user/Downloads/Verilog-Homework/design/mcu.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module mcu
 # 
@@ -37,10 +49,10 @@
 # 
 do compile.do
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module test_timer
+# -- Compiling module test_id
 # 
 # Top level modules:
-# 	test_timer
+# 	test_id
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module RGY_combination
 # -- Compiling module add_sub_4bits
@@ -49,39 +61,13 @@ do compile.do
 # -- Compiling module counter_4bits
 # -- Compiling module decoder_3to8
 # -- Compiling module dff_pos
-# -- Compiling module full_adder
-# -- Compiling module multiplexer_4to1
-# -- Compiling module seven_segment
-# -- Compiling module ten_digit
-# ** Error: ../../design/components/ten_digit.sv(34): (vlog-2884) Out of bounds access.  Bit number 3 of part-select into 'q' is out of bounds.
-# 
-# -- Compiling module timer
-# -- Compiling module unit_digit
-# -- Compiling module up_down_counter_4bits
-# ** Error: C:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./compile.do line 6
-# C:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog ../../design/components/*.sv"
-do compile.do
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module test_timer
-# 
-# Top level modules:
-# 	test_timer
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module RGY_combination
-# -- Compiling module add_sub_4bits
-# -- Compiling module counter_2bits
-# -- Compiling module counter_3bits
-# -- Compiling module counter_4bits
-# -- Compiling module decoder_3to8
-# -- Compiling module dff_pos
+# -- Compiling module freg_div_23
 # -- Compiling module full_adder
 # -- Compiling module multiplexer_4to1
 # -- Compiling module seven_segment
 # -- Compiling module ten_digit
 # -- Compiling module timer
+# -- Compiling module timer_h
 # -- Compiling module unit_digit
 # -- Compiling module up_down_counter_4bits
 # 
@@ -92,145 +78,90 @@ do compile.do
 # 	counter_3bits
 # 	counter_4bits
 # 	decoder_3to8
+# 	freg_div_23
 # 	multiplexer_4to1
 # 	seven_segment
 # 	timer
+# 	timer_h
 # 	up_down_counter_4bits
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module RGY_top
+# -- Compiling module birthdate
 # -- Compiling module mcu
+# -- Compiling module student_id
 # 
 # Top level modules:
 # 	RGY_top
 # 	mcu
 do sim.do
-# vsim -voptargs=+acc work.test_timer 
+# vsim -voptargs=+acc work.test_id 
 # Loading sv_std.std
-# Loading work.test_timer
-# Loading work.timer
-# Loading work.unit_digit
+# Loading work.test_id
+# Loading work.birthdate
 # Loading work.dff_pos
-# Loading work.ten_digit
-# ** Error: (vsim-3389) ../../design/components/timer.sv(14): Port 'carry' not found in the connected module (5th connection).
-# 
-#         Region: /test_timer/t1/sec_unit
-# ** Fatal: (vsim-3365) ../../design/components/timer.sv(14): Too many port connections. Expected 4, found 5.
-#    Time: 0 ps  Iteration: 0  Instance: /test_timer/t1/sec_unit File: ../../design/components/unit_digit.sv
-# FATAL ERROR while loading design
-# Error loading design
-# Error: Error loading design 
-#        Pausing macro execution 
-# MACRO ./sim.do PAUSED at line 1
-do compile.do
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module test_timer
-# 
-# Top level modules:
-# 	test_timer
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module RGY_combination
-# -- Compiling module add_sub_4bits
-# -- Compiling module counter_2bits
-# -- Compiling module counter_3bits
-# -- Compiling module counter_4bits
-# -- Compiling module decoder_3to8
-# -- Compiling module dff_pos
-# -- Compiling module full_adder
-# -- Compiling module multiplexer_4to1
-# -- Compiling module seven_segment
-# -- Compiling module ten_digit
-# -- Compiling module timer
-# -- Compiling module unit_digit
-# -- Compiling module up_down_counter_4bits
-# 
-# Top level modules:
-# 	RGY_combination
-# 	add_sub_4bits
-# 	counter_2bits
-# 	counter_3bits
-# 	counter_4bits
-# 	decoder_3to8
-# 	multiplexer_4to1
-# 	seven_segment
-# 	timer
-# 	up_down_counter_4bits
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module RGY_top
-# -- Compiling module mcu
-# 
-# Top level modules:
-# 	RGY_top
-# 	mcu
-do sim.do
-# vsim -voptargs=+acc work.test_timer 
-# Loading sv_std.std
-# Loading work.test_timer
-# Loading work.timer
-# Loading work.unit_digit
-# Loading work.dff_pos
-# Loading work.ten_digit
-# ** Error: (vsim-3839) ../../design/components/timer.sv(35): Variable '/test_timer/t1/sec_tens_c', driven via a port connection, is multiply driven. See ../../design/components/timer.sv(21).
-# 
-#         Region: /test_timer/t1/min_ten
-# Error loading design
-# Error: Error loading design 
-#        Pausing macro execution 
-# MACRO ./sim.do PAUSED at line 1
-do compile.do
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module test_timer
-# 
-# Top level modules:
-# 	test_timer
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module RGY_combination
-# -- Compiling module add_sub_4bits
-# -- Compiling module counter_2bits
-# -- Compiling module counter_3bits
-# -- Compiling module counter_4bits
-# -- Compiling module decoder_3to8
-# -- Compiling module dff_pos
-# -- Compiling module full_adder
-# -- Compiling module multiplexer_4to1
-# -- Compiling module seven_segment
-# -- Compiling module ten_digit
-# -- Compiling module timer
-# -- Compiling module unit_digit
-# -- Compiling module up_down_counter_4bits
-# 
-# Top level modules:
-# 	RGY_combination
-# 	add_sub_4bits
-# 	counter_2bits
-# 	counter_3bits
-# 	counter_4bits
-# 	decoder_3to8
-# 	multiplexer_4to1
-# 	seven_segment
-# 	timer
-# 	up_down_counter_4bits
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module RGY_top
-# -- Compiling module mcu
-# 
-# Top level modules:
-# 	RGY_top
-# 	mcu
-do sim.do
-# vsim -voptargs=+acc work.test_timer 
-# Loading sv_std.std
-# Loading work.test_timer
-# Loading work.timer
-# Loading work.unit_digit
-# Loading work.dff_pos
-# Loading work.ten_digit
 # .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
-# Break in Module test_timer at ../tb/test_timer.sv line 17
-# Simulation Breakpoint: Break in Module test_timer at ../tb/test_timer.sv line 17
+# Break in Module test_id at ../tb/test_id.sv line 13
+# Simulation Breakpoint: Break in Module test_id at ../tb/test_id.sv line 13
 # MACRO ./sim.do PAUSED at line 7
-add wave -position end  sim:/test_timer/clk
-add wave -position end  sim:/test_timer/reset
-add wave -position end  sim:/test_timer/sec_tens
-add wave -position end  sim:/test_timer/min_tens
-add wave -position end  sim:/test_timer/sec_units
-add wave -position end  sim:/test_timer/min_units
+add wave -position end  sim:/test_id/clk
+add wave -position end  sim:/test_id/reset
+add wave -position end  sim:/test_id/date
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module test_id
+# 
+# Top level modules:
+# 	test_id
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module RGY_combination
+# -- Compiling module add_sub_4bits
+# -- Compiling module counter_2bits
+# -- Compiling module counter_3bits
+# -- Compiling module counter_4bits
+# -- Compiling module decoder_3to8
+# -- Compiling module dff_pos
+# -- Compiling module freg_div_23
+# -- Compiling module full_adder
+# -- Compiling module multiplexer_4to1
+# -- Compiling module seven_segment
+# -- Compiling module ten_digit
+# -- Compiling module timer
+# -- Compiling module timer_h
+# -- Compiling module unit_digit
+# -- Compiling module up_down_counter_4bits
+# 
+# Top level modules:
+# 	RGY_combination
+# 	add_sub_4bits
+# 	counter_2bits
+# 	counter_3bits
+# 	counter_4bits
+# 	decoder_3to8
+# 	freg_div_23
+# 	multiplexer_4to1
+# 	seven_segment
+# 	timer
+# 	timer_h
+# 	up_down_counter_4bits
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module RGY_top
+# -- Compiling module birthdate
+# -- Compiling module mcu
+# -- Compiling module student_id
+# 
+# Top level modules:
+# 	RGY_top
+# 	mcu
+do sim.do
+# vsim -voptargs=+acc work.test_id 
+# Loading sv_std.std
+# Loading work.test_id
+# Loading work.birthdate
+# Loading work.dff_pos
+add wave -position end  sim:/test_id/clk
+add wave -position end  sim:/test_id/reset
+add wave -position end  sim:/test_id/date
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module test_id at ../tb/test_id.sv line 13
+# Simulation Breakpoint: Break in Module test_id at ../tb/test_id.sv line 13
+# MACRO ./sim.do PAUSED at line 7

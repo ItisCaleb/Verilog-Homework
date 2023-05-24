@@ -14,6 +14,6 @@ module freg_div_23(
 			q <= q + 1;
 	end
 	
-	assign clk_out = q[18];
+	assign clk_out = q[23];
 
 endmodule

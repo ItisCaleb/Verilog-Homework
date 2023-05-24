@@ -2,7 +2,7 @@
 
 
 # ------------------------------------------------------------
-vlog ../tb/test_timer.sv
+vlog ../tb/test_id.sv
 vlog ../../design/components/*.sv
 vlog ../../design/*.sv
 

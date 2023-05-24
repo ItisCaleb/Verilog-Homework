@@ -2,7 +2,7 @@ m255
 K3
 13
 cModel Technology
-Z0 dC:\Users\user\Desktop\Verilog-Homework\simulation\modelsim
+Z0 dC:\Users\user\Downloads\Verilog-Homework\simulation\modelsim
 vadd_sub_4bits
 Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
 Z2 !s100 1zRPRaYUO21oH9jTQnSb40
@@ -10,32 +10,54 @@ Z3 I@QGI0@Gh9kY=2GZTd5[HS0
 Z4 VQUQh:Nj8UC<lj6IQSiLC12
 Z5 !s105 add_sub_4bits_sv_unit
 S1
-Z6 dC:\Users\user\Desktop\Verilog-Homework\simulation\modelsim
-Z7 w1684300441
+Z6 dC:\Users\user\Downloads\Verilog-Homework\simulation\modelsim
+Z7 w1684904388
 Z8 8../../design/components/add_sub_4bits.sv
 Z9 F../../design/components/add_sub_4bits.sv
 L0 1
 Z10 OV;L;10.1d;51
 r1
 31
-Z11 !s108 1684304092.662000
-Z12 !s107 ../../design/components/up_down_counter_4bits.sv|../../design/components/unit_digit.sv|../../design/components/timer.sv|../../design/components/ten_digit.sv|../../design/components/seven_segment.sv|../../design/components/multiplexer_4to1.sv|../../design/components/full_adder.sv|../../design/components/dff_pos.sv|../../design/components/decoder_3to8.sv|../../design/components/counter_4bits.sv|../../design/components/counter_3bits.sv|../../design/components/counter_2bits.sv|../../design/components/add_sub_4bits.sv|../../design/components/RGY_combination.sv|
-Z13 !s90 -reportprogress|300|../../design/components/RGY_combination.sv|../../design/components/add_sub_4bits.sv|../../design/components/counter_2bits.sv|../../design/components/counter_3bits.sv|../../design/components/counter_4bits.sv|../../design/components/decoder_3to8.sv|../../design/components/dff_pos.sv|../../design/components/full_adder.sv|../../design/components/multiplexer_4to1.sv|../../design/components/seven_segment.sv|../../design/components/ten_digit.sv|../../design/components/timer.sv|../../design/components/unit_digit.sv|../../design/components/up_down_counter_4bits.sv|
+Z11 !s108 1684907771.272000
+Z12 !s107 ../../design/components/up_down_counter_4bits.sv|../../design/components/unit_digit.sv|../../design/components/timer_h.sv|../../design/components/timer.sv|../../design/components/ten_digit.sv|../../design/components/seven_segment.sv|../../design/components/multiplexer_4to1.sv|../../design/components/full_adder.sv|../../design/components/freg_div_23.sv|../../design/components/dff_pos.sv|../../design/components/decoder_3to8.sv|../../design/components/counter_4bits.sv|../../design/components/counter_3bits.sv|../../design/components/counter_2bits.sv|../../design/components/add_sub_4bits.sv|../../design/components/RGY_combination.sv|
+Z13 !s90 -reportprogress|300|../../design/components/RGY_combination.sv|../../design/components/add_sub_4bits.sv|../../design/components/counter_2bits.sv|../../design/components/counter_3bits.sv|../../design/components/counter_4bits.sv|../../design/components/decoder_3to8.sv|../../design/components/dff_pos.sv|../../design/components/freg_div_23.sv|../../design/components/full_adder.sv|../../design/components/multiplexer_4to1.sv|../../design/components/seven_segment.sv|../../design/components/ten_digit.sv|../../design/components/timer.sv|../../design/components/timer_h.sv|../../design/components/unit_digit.sv|../../design/components/up_down_counter_4bits.sv|
 o-O0
 !i10b 1
 !s85 0
 !s101 -O0
+vbirthdate
+R1
+!i10b 1
+!s100 PC>8oiL[nj;^JBS77]N333
+IIEDTGX5R::6b<nMaL[3R71
+Z14 VLDjNLMQ@aEn<OLPDg7lmc1
+Z15 !s105 birthdate_sv_unit
+S1
+R6
+w1684907766
+Z16 8../../design/birthdate.sv
+Z17 F../../design/birthdate.sv
+L0 1
+R10
+r1
+!s85 0
+31
+Z18 !s108 1684907771.514000
+Z19 !s107 ../../design/student_id.sv|../../design/mcu.sv|../../design/birthdate.sv|../../design/RGY_top.sv|
+Z20 !s90 -reportprogress|300|../../design/RGY_top.sv|../../design/birthdate.sv|../../design/mcu.sv|../../design/student_id.sv|
+!s101 -O0
+o-O0
 vcounter_2bits
 R1
-Z14 !s100 eazIJC>:N6gcATEFWJj?02
-Z15 ITRigF3=XG6XJ>;_WZVYDW0
-Z16 VTPC=NPoj4RPV5kD8QKM_N1
-Z17 !s105 counter_2bits_sv_unit
+Z21 !s100 eazIJC>:N6gcATEFWJj?02
+Z22 ITRigF3=XG6XJ>;_WZVYDW0
+Z23 VTPC=NPoj4RPV5kD8QKM_N1
+Z24 !s105 counter_2bits_sv_unit
 S1
 R6
 R7
-Z18 8../../design/components/counter_2bits.sv
-Z19 F../../design/components/counter_2bits.sv
+Z25 8../../design/components/counter_2bits.sv
+Z26 F../../design/components/counter_2bits.sv
 L0 1
 R10
 r1
@@ -49,15 +71,15 @@ o-O0
 !s101 -O0
 vcounter_3bits
 R1
-Z20 !s100 T>:>@EfVS^SEz;`I=1dKJ3
-Z21 IeWm2DdCb[IB>9O^zcBLdU2
-Z22 V:4@93HY[gQCO;6LKKXEl>1
-Z23 !s105 counter_3bits_sv_unit
+Z27 !s100 T>:>@EfVS^SEz;`I=1dKJ3
+Z28 IeWm2DdCb[IB>9O^zcBLdU2
+Z29 V:4@93HY[gQCO;6LKKXEl>1
+Z30 !s105 counter_3bits_sv_unit
 S1
 R6
 R7
-Z24 8../../design/components/counter_3bits.sv
-Z25 F../../design/components/counter_3bits.sv
+Z31 8../../design/components/counter_3bits.sv
+Z32 F../../design/components/counter_3bits.sv
 L0 1
 R10
 r1
@@ -71,15 +93,15 @@ o-O0
 !s101 -O0
 vcounter_4bits
 R1
-Z26 !s100 U=oG805BFo@fLk@hiZlnh3
-Z27 I3_L8[SKg4Z@o3FVdi<`OX1
-Z28 VmQgTn[FE?I;QgXWg>[LbY2
-Z29 !s105 counter_4bits_sv_unit
+Z33 !s100 U=oG805BFo@fLk@hiZlnh3
+Z34 I3_L8[SKg4Z@o3FVdi<`OX1
+Z35 VmQgTn[FE?I;QgXWg>[LbY2
+Z36 !s105 counter_4bits_sv_unit
 S1
 R6
 R7
-Z30 8../../design/components/counter_4bits.sv
-Z31 F../../design/components/counter_4bits.sv
+Z37 8../../design/components/counter_4bits.sv
+Z38 F../../design/components/counter_4bits.sv
 L0 1
 R10
 r1
@@ -93,15 +115,15 @@ o-O0
 !s101 -O0
 vdecoder_3to8
 R1
-Z32 !s100 TCHmfIg[mP<1lO>_E;iCn3
-Z33 ID:Z@0Ab8iiM;P?Jzdz=4U0
-Z34 VZWUG93?R6DMfIF]hbZkER0
-Z35 !s105 decoder_3to8_sv_unit
+Z39 !s100 TCHmfIg[mP<1lO>_E;iCn3
+Z40 ID:Z@0Ab8iiM;P?Jzdz=4U0
+Z41 VZWUG93?R6DMfIF]hbZkER0
+Z42 !s105 decoder_3to8_sv_unit
 S1
 R6
 R7
-Z36 8../../design/components/decoder_3to8.sv
-Z37 F../../design/components/decoder_3to8.sv
+Z43 8../../design/components/decoder_3to8.sv
+Z44 F../../design/components/decoder_3to8.sv
 L0 1
 R10
 r1
@@ -115,15 +137,37 @@ o-O0
 !s101 -O0
 vdff_pos
 R1
-Z38 !s100 mmhI?37JGeGbZ9h_e^f?g0
-Z39 IH9=^a;mA3@AN8ndAooD0o0
-Z40 VPE@;]]ZLS3i@z07<Q>X=01
-Z41 !s105 dff_pos_sv_unit
+Z45 !s100 mmhI?37JGeGbZ9h_e^f?g0
+Z46 IH9=^a;mA3@AN8ndAooD0o0
+Z47 VPE@;]]ZLS3i@z07<Q>X=01
+Z48 !s105 dff_pos_sv_unit
 S1
 R6
 R7
-Z42 8../../design/components/dff_pos.sv
-Z43 F../../design/components/dff_pos.sv
+Z49 8../../design/components/dff_pos.sv
+Z50 F../../design/components/dff_pos.sv
+L0 1
+R10
+r1
+31
+R11
+R12
+R13
+o-O0
+!i10b 1
+!s85 0
+!s101 -O0
+vfreg_div_23
+R1
+Z51 !s100 JRXD@F0E0N6oQXWG5761H0
+Z52 IY3=kY<GWDI0zSW1LC@>ah3
+Z53 Vj@NRNebab7LaU>KAB:fEd2
+Z54 !s105 freg_div_23_sv_unit
+S1
+R6
+Z55 w1684907366
+Z56 8../../design/components/freg_div_23.sv
+Z57 F../../design/components/freg_div_23.sv
 L0 1
 R10
 r1
@@ -137,15 +181,15 @@ o-O0
 !s101 -O0
 vfull_adder
 R1
-Z44 !s100 m9Aand1AiACAICJZ75QJB3
-Z45 I3ghGhZNHB1=C:eY]Y1gH91
-Z46 VNE_DOBiZE>HPFMG5_Bc1?2
-Z47 !s105 full_adder_sv_unit
+Z58 !s100 m9Aand1AiACAICJZ75QJB3
+Z59 I3ghGhZNHB1=C:eY]Y1gH91
+Z60 VNE_DOBiZE>HPFMG5_Bc1?2
+Z61 !s105 full_adder_sv_unit
 S1
 R6
 R7
-Z48 8../../design/components/full_adder.sv
-Z49 F../../design/components/full_adder.sv
+Z62 8../../design/components/full_adder.sv
+Z63 F../../design/components/full_adder.sv
 L0 1
 R10
 r1
@@ -160,36 +204,36 @@ o-O0
 vmcu
 R1
 !i10b 1
-Z50 !s100 T[Yn_62kMAU_FDWa1A=B53
-Z51 ILZSdGeDXK9ja[9o`GXnKm3
-Z52 V]YjK=Qk:n2YKQ3RJ8;PoG2
-Z53 !s105 mcu_sv_unit
+Z64 !s100 AW7fQM<SKTKmWc8fL<VX@3
+Z65 I<SWcZV7GTojYdd^QLXP[P3
+Z66 V]YjK=Qk:n2YKQ3RJ8;PoG2
+Z67 !s105 mcu_sv_unit
 S1
 R6
-R7
-Z54 8../../design/mcu.sv
-Z55 F../../design/mcu.sv
+Z68 w1684907330
+Z69 8../../design/mcu.sv
+Z70 F../../design/mcu.sv
 L0 6
 R10
 r1
 !s85 0
 31
-Z56 !s108 1684304092.884000
-Z57 !s107 ../../design/mcu.sv|../../design/RGY_top.sv|
-Z58 !s90 -reportprogress|300|../../design/RGY_top.sv|../../design/mcu.sv|
+R18
+R19
+R20
 !s101 -O0
 o-O0
 vmultiplexer_4to1
 R1
-Z59 !s100 bKHYNb9mTP=O?aR_LMDGI3
-Z60 IJY0EPW]9H=363G6hcddZ`2
-Z61 V2hHI4B0[]ihJZ7hf:NeVM1
-Z62 !s105 multiplexer_4to1_sv_unit
+Z71 !s100 bKHYNb9mTP=O?aR_LMDGI3
+Z72 IJY0EPW]9H=363G6hcddZ`2
+Z73 V2hHI4B0[]ihJZ7hf:NeVM1
+Z74 !s105 multiplexer_4to1_sv_unit
 S1
 R6
 R7
-Z63 8../../design/components/multiplexer_4to1.sv
-Z64 F../../design/components/multiplexer_4to1.sv
+Z75 8../../design/components/multiplexer_4to1.sv
+Z76 F../../design/components/multiplexer_4to1.sv
 L0 1
 R10
 r1
@@ -203,15 +247,15 @@ o-O0
 !s101 -O0
 vRGY_combination
 R1
-Z65 !s100 XOza2[7kMJlYYM@Oo6OkB2
-Z66 IdP0?T^[GnWb3l8N9h_We82
-Z67 Vd]Jj3Dm79;:]L3b^VDHZ^0
-Z68 !s105 RGY_combination_sv_unit
+Z77 !s100 XOza2[7kMJlYYM@Oo6OkB2
+Z78 IdP0?T^[GnWb3l8N9h_We82
+Z79 Vd]Jj3Dm79;:]L3b^VDHZ^0
+Z80 !s105 RGY_combination_sv_unit
 S1
 R6
 R7
-Z69 8../../design/components/RGY_combination.sv
-Z70 F../../design/components/RGY_combination.sv
+Z81 8../../design/components/RGY_combination.sv
+Z82 F../../design/components/RGY_combination.sv
 L0 1
 R10
 r1
@@ -220,44 +264,44 @@ R11
 R12
 R13
 o-O0
-Z71 n@r@g@y_combination
+Z83 n@r@g@y_combination
 !i10b 1
 !s85 0
 !s101 -O0
 vRGY_top
 R1
 !i10b 1
-Z72 !s100 7DkHKYCM]6ob^CWeez]Q>0
-Z73 ISf7T1R2]o`B^JHXgXa[`o0
-Z74 VojBiDa28MSCOK<QHkQKgE1
-Z75 !s105 RGY_top_sv_unit
+Z84 !s100 7DkHKYCM]6ob^CWeez]Q>0
+Z85 ISf7T1R2]o`B^JHXgXa[`o0
+Z86 VojBiDa28MSCOK<QHkQKgE1
+Z87 !s105 RGY_top_sv_unit
 S1
 R6
 R7
-Z76 8../../design/RGY_top.sv
-Z77 F../../design/RGY_top.sv
+Z88 8../../design/RGY_top.sv
+Z89 F../../design/RGY_top.sv
 L0 1
 R10
 r1
 !s85 0
 31
-R56
-R57
-R58
+R18
+R19
+R20
 !s101 -O0
 o-O0
-Z78 n@r@g@y_top
+Z90 n@r@g@y_top
 vseven_segment
 R1
-Z79 !s100 j_4=1h][4iC>[7Xgz_:ma1
-Z80 IGH9VkneZIkWK4;Ozn8UAn3
-Z81 V5HHPhBoZBS8FAC^=WK]L21
-Z82 !s105 seven_segment_sv_unit
+Z91 !s100 j_4=1h][4iC>[7Xgz_:ma1
+Z92 IGH9VkneZIkWK4;Ozn8UAn3
+Z93 V5HHPhBoZBS8FAC^=WK]L21
+Z94 !s105 seven_segment_sv_unit
 S1
 R6
 R7
-Z83 8../../design/components/seven_segment.sv
-Z84 F../../design/components/seven_segment.sv
+Z95 8../../design/components/seven_segment.sv
+Z96 F../../design/components/seven_segment.sv
 L0 1
 R10
 r1
@@ -269,17 +313,39 @@ o-O0
 !i10b 1
 !s85 0
 !s101 -O0
+vstudent_id
+R1
+!i10b 1
+Z97 !s100 >95Ch<S6F[?;5XYQN]EZ^3
+Z98 ILB[P<g75J4PMD6^?YP<P_0
+Z99 VJYWm29k4j@fZW=VGNTZ:A0
+Z100 !s105 student_id_sv_unit
+S1
+R6
+Z101 w1684906260
+Z102 8../../design/student_id.sv
+Z103 F../../design/student_id.sv
+L0 1
+R10
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+o-O0
 vten_digit
 R1
-Z85 !s100 d;HLOCFY]0`_]@ljKNJYi2
-Z86 IOXlJmLF@kaUAj]_H;PBAT0
-Z87 VlFkdH<=memkk=T3^SW5gn1
-Z88 !s105 ten_digit_sv_unit
+Z104 !s100 d;HLOCFY]0`_]@ljKNJYi2
+Z105 IOXlJmLF@kaUAj]_H;PBAT0
+Z106 VlFkdH<=memkk=T3^SW5gn1
+Z107 !s105 ten_digit_sv_unit
 S1
 R6
-Z89 w1684304056
-Z90 8../../design/components/ten_digit.sv
-Z91 F../../design/components/ten_digit.sv
+R7
+Z108 8../../design/components/ten_digit.sv
+Z109 F../../design/components/ten_digit.sv
 L0 1
 R10
 r1
@@ -291,38 +357,39 @@ o-O0
 !i10b 1
 !s85 0
 !s101 -O0
-vtest_timer
+vtest_id
 R1
-Z92 !s100 XhN=Qa9JM90k^^`hIJQ0K1
-Z93 IbhVR_J8=KgID[Eg6zz9j63
-Z94 VEZK>Bb;[A[K<UhJ_4^:LT1
-Z95 !s105 test_timer_sv_unit
+Z110 !s100 gZ7lEBdohJZheMLeaJebB0
+Z111 I8_ZSeT@NecWk<U2zEBiQB1
+Z112 V>TlEY0@5K4@@zcmHBk@0S2
+Z113 !s105 test_id_sv_unit
 S1
 R6
-Z96 w1684303878
-Z97 8../tb/test_timer.sv
-Z98 F../tb/test_timer.sv
+Z114 w1684906808
+Z115 8../tb/test_id.sv
+Z116 F../tb/test_id.sv
 L0 1
 R10
 r1
 31
-Z99 !s90 -reportprogress|300|../tb/test_timer.sv|
+Z117 !s90 -reportprogress|300|../tb/test_id.sv|
 o-O0
-Z100 !s108 1684304092.596000
-Z101 !s107 ../tb/test_timer.sv|
+Z118 !s108 1684907771.204000
+Z119 !s107 ../tb/test_id.sv|
 !i10b 1
 !s85 0
 !s101 -O0
 vtimer
 R1
-Z102 ImN=_20Lk7XHKO2[3WThBh0
-Z103 VHFIOFhbD7NGIHHU46kPbM3
-Z104 !s105 timer_sv_unit
+Z120 !s100 56oFI^jSlIGX?5eYFfXOz0
+Z121 ImN=_20Lk7XHKO2[3WThBh0
+Z122 VHFIOFhbD7NGIHHU46kPbM3
+Z123 !s105 timer_sv_unit
 S1
 R6
-Z105 w1684304090
-Z106 8../../design/components/timer.sv
-Z107 F../../design/components/timer.sv
+R7
+Z124 8../../design/components/timer.sv
+Z125 F../../design/components/timer.sv
 L0 1
 R10
 r1
@@ -332,20 +399,41 @@ R12
 R13
 o-O0
 !i10b 1
-Z108 !s100 56oFI^jSlIGX?5eYFfXOz0
+!s85 0
+!s101 -O0
+vtimer_h
+R1
+Z126 !s100 KLR7ASFW?T_F6zBE4m?Wz0
+Z127 Iknl^jK]3Y1ffdN?603b>n1
+Z128 V[XF6aQ0WdG7dgf:?3=kQI3
+Z129 !s105 timer_h_sv_unit
+S1
+R6
+R7
+Z130 8../../design/components/timer_h.sv
+Z131 F../../design/components/timer_h.sv
+L0 1
+R10
+r1
+31
+R11
+R12
+R13
+o-O0
+!i10b 1
 !s85 0
 !s101 -O0
 vunit_digit
 R1
-Z109 !s100 CR5FUFTRj:fXLEbGi^NgL1
-Z110 InT2F2@eS^8kA[N^4>cLm22
-Z111 V:=SoQ8_:z8MhbMY[0zX=>1
-Z112 !s105 unit_digit_sv_unit
+Z132 !s100 CR5FUFTRj:fXLEbGi^NgL1
+Z133 InT2F2@eS^8kA[N^4>cLm22
+Z134 V:=SoQ8_:z8MhbMY[0zX=>1
+Z135 !s105 unit_digit_sv_unit
 S1
 R6
-Z113 w1684304048
-Z114 8../../design/components/unit_digit.sv
-Z115 F../../design/components/unit_digit.sv
+R7
+Z136 8../../design/components/unit_digit.sv
+Z137 F../../design/components/unit_digit.sv
 L0 1
 R10
 r1
@@ -359,15 +447,15 @@ o-O0
 !s101 -O0
 vup_down_counter_4bits
 R1
-Z116 !s100 OXIaHhE^3Zfz`Eg@8EM[Z2
-Z117 IgCQBjCgH1kooY2JVLgC3b3
-Z118 VfCYjKIlNn<?eCU@B1l>jV3
-Z119 !s105 up_down_counter_4bits_sv_unit
+Z138 !s100 OXIaHhE^3Zfz`Eg@8EM[Z2
+Z139 IgCQBjCgH1kooY2JVLgC3b3
+Z140 VfCYjKIlNn<?eCU@B1l>jV3
+Z141 !s105 up_down_counter_4bits_sv_unit
 S1
 R6
 R7
-Z120 8../../design/components/up_down_counter_4bits.sv
-Z121 F../../design/components/up_down_counter_4bits.sv
+Z142 8../../design/components/up_down_counter_4bits.sv
+Z143 F../../design/components/up_down_counter_4bits.sv
 L0 1
 R10
 r1

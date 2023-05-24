@@ -14,20 +14,20 @@ HEX1[3] << seven_segment:s1.out
 HEX1[4] << seven_segment:s1.out
 HEX1[5] << seven_segment:s1.out
 HEX1[6] << seven_segment:s1.out
-HEX2[0] << seven_segment:s2.out
-HEX2[1] << seven_segment:s2.out
-HEX2[2] << seven_segment:s2.out
-HEX2[3] << seven_segment:s2.out
-HEX2[4] << seven_segment:s2.out
-HEX2[5] << seven_segment:s2.out
-HEX2[6] << seven_segment:s2.out
-HEX3[0] << seven_segment:s3.out
-HEX3[1] << seven_segment:s3.out
-HEX3[2] << seven_segment:s3.out
-HEX3[3] << seven_segment:s3.out
-HEX3[4] << seven_segment:s3.out
-HEX3[5] << seven_segment:s3.out
-HEX3[6] << seven_segment:s3.out
+HEX2[0] << <GND>
+HEX2[1] << <GND>
+HEX2[2] << <GND>
+HEX2[3] << <GND>
+HEX2[4] << <GND>
+HEX2[5] << <GND>
+HEX2[6] << <GND>
+HEX3[0] << <GND>
+HEX3[1] << <GND>
+HEX3[2] << <GND>
+HEX3[3] << <GND>
+HEX3[4] << <GND>
+HEX3[5] << <GND>
+HEX3[6] << <GND>
 LED[0] << <GND>
 LED[1] << <GND>
 LED[2] << <GND>
@@ -48,6 +48,7 @@ SW[6] => ~NO_FANOUT~
 SW[7] => ~NO_FANOUT~
 SW[8] => ~NO_FANOUT~
 SW[9] => ~NO_FANOUT~
+BTN[0] => _.IN1
 BTN[0] => _.IN1
 BTN[0] => _.IN1
 BTN[1] => ~NO_FANOUT~
@@ -119,190 +120,77 @@ reset => q[28].ACLR
 reset => q[29].ACLR
 reset => q[30].ACLR
 reset => q[31].ACLR
-clk_out <= q[18].DB_MAX_OUTPUT_PORT_TYPE
+clk_out <= q[23].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|mcu|timer_h:t1
-clk => clk.IN4
-reset => _reset.IN1
-min_tens[0] <= ten_digit:min_ten.q
-min_tens[1] <= ten_digit:min_ten.q
-min_tens[2] <= ten_digit:min_ten.q
-hour_tens[0] <= ten_digit:hour_ten.q
-hour_tens[1] <= ten_digit:hour_ten.q
-hour_tens[2] <= ten_digit:hour_ten.q
-min_units[0] <= unit_digit:min_unit.q
-min_units[1] <= unit_digit:min_unit.q
-min_units[2] <= unit_digit:min_unit.q
-min_units[3] <= unit_digit:min_unit.q
-hour_units[0] <= unit_digit:hour_unit.q
-hour_units[1] <= unit_digit:hour_unit.q
-hour_units[2] <= unit_digit:hour_unit.q
-hour_units[3] <= unit_digit:hour_unit.q
-
-
-|mcu|timer_h:t1|unit_digit:min_unit
+|mcu|student_id:sid
 clk => clk.IN4
 reset => reset.IN4
-c_in => da.IN1
-c_in => db.IN1
-c_in => dc.IN1
-c_in => dd.IN1
-c_in => carry.IN1
-c_in => da.IN1
-c_in => db.IN1
-c_in => dc.IN1
-c_in => dd.IN1
-q[0] <= dff_pos:dff_posD.q
-q[1] <= dff_pos:dff_posC.q
-q[2] <= dff_pos:dff_posB.q
-q[3] <= dff_pos:dff_posA.q
-carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+id[0] <= dff_pos:dff_posD.q
+id[1] <= dff_pos:dff_posC.q
+id[2] <= dff_pos:dff_posB.q
+id[3] <= dff_pos:dff_posA.q
 
 
-|mcu|timer_h:t1|unit_digit:min_unit|dff_pos:dff_posA
+|mcu|student_id:sid|dff_pos:dff_posA
 d => q.DATAA
 clk => q~reg0.CLK
 reset => q.OUTPUTSELECT
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|mcu|timer_h:t1|unit_digit:min_unit|dff_pos:dff_posB
+|mcu|student_id:sid|dff_pos:dff_posB
 d => q.DATAA
 clk => q~reg0.CLK
 reset => q.OUTPUTSELECT
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|mcu|timer_h:t1|unit_digit:min_unit|dff_pos:dff_posC
+|mcu|student_id:sid|dff_pos:dff_posC
 d => q.DATAA
 clk => q~reg0.CLK
 reset => q.OUTPUTSELECT
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|mcu|timer_h:t1|unit_digit:min_unit|dff_pos:dff_posD
+|mcu|student_id:sid|dff_pos:dff_posD
 d => q.DATAA
 clk => q~reg0.CLK
 reset => q.OUTPUTSELECT
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|mcu|timer_h:t1|ten_digit:min_ten
-clk => clk.IN3
-reset => reset.IN3
-c_in => da.IN1
-c_in => db.IN1
-c_in => dc.IN1
-c_in => carry.IN1
-c_in => da.IN1
-c_in => db.IN1
-c_in => dc.IN1
-q[0] <= dff_pos:dff_posC.q
-q[1] <= dff_pos:dff_posB.q
-q[2] <= dff_pos:dff_posA.q
-carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|mcu|timer_h:t1|ten_digit:min_ten|dff_pos:dff_posA
-d => q.DATAA
-clk => q~reg0.CLK
-reset => q.OUTPUTSELECT
-q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|mcu|timer_h:t1|ten_digit:min_ten|dff_pos:dff_posB
-d => q.DATAA
-clk => q~reg0.CLK
-reset => q.OUTPUTSELECT
-q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|mcu|timer_h:t1|ten_digit:min_ten|dff_pos:dff_posC
-d => q.DATAA
-clk => q~reg0.CLK
-reset => q.OUTPUTSELECT
-q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|mcu|timer_h:t1|unit_digit:hour_unit
+|mcu|birthdate:bd
 clk => clk.IN4
 reset => reset.IN4
-c_in => da.IN1
-c_in => db.IN1
-c_in => dc.IN1
-c_in => dd.IN1
-c_in => carry.IN1
-c_in => da.IN1
-c_in => db.IN1
-c_in => dc.IN1
-c_in => dd.IN1
-q[0] <= dff_pos:dff_posD.q
-q[1] <= dff_pos:dff_posC.q
-q[2] <= dff_pos:dff_posB.q
-q[3] <= dff_pos:dff_posA.q
-carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+date[0] <= dff_pos:dff_posD.q
+date[1] <= dff_pos:dff_posC.q
+date[2] <= dff_pos:dff_posB.q
+date[3] <= dff_pos:dff_posA.q
 
 
-|mcu|timer_h:t1|unit_digit:hour_unit|dff_pos:dff_posA
+|mcu|birthdate:bd|dff_pos:dff_posA
 d => q.DATAA
 clk => q~reg0.CLK
 reset => q.OUTPUTSELECT
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|mcu|timer_h:t1|unit_digit:hour_unit|dff_pos:dff_posB
+|mcu|birthdate:bd|dff_pos:dff_posB
 d => q.DATAA
 clk => q~reg0.CLK
 reset => q.OUTPUTSELECT
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|mcu|timer_h:t1|unit_digit:hour_unit|dff_pos:dff_posC
+|mcu|birthdate:bd|dff_pos:dff_posC
 d => q.DATAA
 clk => q~reg0.CLK
 reset => q.OUTPUTSELECT
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|mcu|timer_h:t1|unit_digit:hour_unit|dff_pos:dff_posD
-d => q.DATAA
-clk => q~reg0.CLK
-reset => q.OUTPUTSELECT
-q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|mcu|timer_h:t1|ten_digit:hour_ten
-clk => clk.IN3
-reset => reset.IN3
-c_in => da.IN1
-c_in => db.IN1
-c_in => dc.IN1
-c_in => carry.IN1
-c_in => da.IN1
-c_in => db.IN1
-c_in => dc.IN1
-q[0] <= dff_pos:dff_posC.q
-q[1] <= dff_pos:dff_posB.q
-q[2] <= dff_pos:dff_posA.q
-carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|mcu|timer_h:t1|ten_digit:hour_ten|dff_pos:dff_posA
-d => q.DATAA
-clk => q~reg0.CLK
-reset => q.OUTPUTSELECT
-q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|mcu|timer_h:t1|ten_digit:hour_ten|dff_pos:dff_posB
-d => q.DATAA
-clk => q~reg0.CLK
-reset => q.OUTPUTSELECT
-q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|mcu|timer_h:t1|ten_digit:hour_ten|dff_pos:dff_posC
+|mcu|birthdate:bd|dff_pos:dff_posD
 d => q.DATAA
 clk => q~reg0.CLK
 reset => q.OUTPUTSELECT
@@ -361,108 +249,6 @@ out[6] <= out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |mcu|seven_segment:s1
-in[0] => out.IN1
-in[0] => out.IN1
-in[0] => out.IN1
-in[0] => out.IN1
-in[0] => out.IN1
-in[0] => out.IN0
-in[0] => out.IN1
-in[0] => out.IN1
-in[0] => out.IN1
-in[0] => out.IN1
-in[0] => out.IN1
-in[0] => out.IN1
-in[0] => out.IN1
-in[0] => out.IN1
-in[0] => out.IN1
-in[0] => out.IN1
-in[0] => out.IN1
-in[1] => out.IN0
-in[1] => out.IN1
-in[1] => out.IN0
-in[1] => out.IN1
-in[1] => out.IN1
-in[1] => out.IN0
-in[1] => out.IN1
-in[1] => out.IN0
-in[1] => out.IN1
-in[1] => out.IN1
-in[1] => out.IN1
-in[2] => out.IN1
-in[2] => out.IN0
-in[2] => out.IN0
-in[2] => out.IN0
-in[2] => out.IN1
-in[2] => out.IN0
-in[3] => out.IN1
-in[3] => out.IN1
-in[3] => out.IN1
-in[3] => out.IN1
-in[3] => out.IN1
-in[3] => out.IN1
-in[3] => out.IN1
-out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
-out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
-out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
-out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
-out[4] <= out.DB_MAX_OUTPUT_PORT_TYPE
-out[5] <= out.DB_MAX_OUTPUT_PORT_TYPE
-out[6] <= out.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|mcu|seven_segment:s2
-in[0] => out.IN1
-in[0] => out.IN1
-in[0] => out.IN1
-in[0] => out.IN1
-in[0] => out.IN1
-in[0] => out.IN0
-in[0] => out.IN1
-in[0] => out.IN1
-in[0] => out.IN1
-in[0] => out.IN1
-in[0] => out.IN1
-in[0] => out.IN1
-in[0] => out.IN1
-in[0] => out.IN1
-in[0] => out.IN1
-in[0] => out.IN1
-in[0] => out.IN1
-in[1] => out.IN0
-in[1] => out.IN1
-in[1] => out.IN0
-in[1] => out.IN1
-in[1] => out.IN1
-in[1] => out.IN0
-in[1] => out.IN1
-in[1] => out.IN0
-in[1] => out.IN1
-in[1] => out.IN1
-in[1] => out.IN1
-in[2] => out.IN1
-in[2] => out.IN0
-in[2] => out.IN0
-in[2] => out.IN0
-in[2] => out.IN1
-in[2] => out.IN0
-in[3] => out.IN1
-in[3] => out.IN1
-in[3] => out.IN1
-in[3] => out.IN1
-in[3] => out.IN1
-in[3] => out.IN1
-in[3] => out.IN1
-out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
-out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
-out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
-out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
-out[4] <= out.DB_MAX_OUTPUT_PORT_TYPE
-out[5] <= out.DB_MAX_OUTPUT_PORT_TYPE
-out[6] <= out.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|mcu|seven_segment:s3
 in[0] => out.IN1
 in[0] => out.IN1
 in[0] => out.IN1

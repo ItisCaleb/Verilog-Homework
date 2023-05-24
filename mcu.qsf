@@ -108,6 +108,8 @@ set_location_assignment PIN_D2 -to SW[9]
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name SYSTEMVERILOG_FILE design/birthdate.sv
+set_global_assignment -name SYSTEMVERILOG_FILE design/student_id.sv
 set_global_assignment -name SYSTEMVERILOG_FILE design/components/timer_h.sv
 set_global_assignment -name SYSTEMVERILOG_FILE design/components/freg_div_23.sv
 set_global_assignment -name SYSTEMVERILOG_FILE design/components/unit_digit.sv
